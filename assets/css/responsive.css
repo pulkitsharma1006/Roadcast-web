@@ -1,0 +1,51 @@
+/* Extra Large Screens (Desktops, 1280px and up) */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1237px;
+    }
+    footer .container {
+        max-width: 1120px;
+    }
+}
+
+/* Large Screens (Laptops, 1024px to 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        max-width: 960px; /* Adjust as needed */
+    }
+    footer .container {
+        max-width: 900px; /* Adjust as needed */
+    }
+}
+
+/* Medium Screens (Tablets, 768px to 991px) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px; /* Adjust as needed */
+    }
+    footer .container {
+        max-width: 680px; /* Adjust as needed */
+    }
+}
+
+/* Small Screens (Mobile landscape, 576px to 767px) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px; /* Adjust as needed */
+    }
+    footer .container {
+        max-width: 480px; /* Adjust as needed */
+    }
+}
+
+/* Extra Small Screens (Mobile portrait, below 576px) */
+@media (max-width: 575px) {
+    .container {
+        max-width: 100%; /* Full width */
+        padding: 10px;   /* Optional padding */
+    }
+    footer .container {
+        max-width: 100%; /* Full width */
+        padding: 10px;   /* Optional padding */
+    }
+}
