@@ -13,3 +13,10 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+.sb1but, .sb2but, .sb3but, .sb4but, .sb5but, .sb6but {line-height: 80px;}
+.submenus {position: absolute; left: 0; top: 78px; width: 100%; min-height: 200px; }
+.submenus > div {width:100%; float:left; margin:0;}
+.submenus a {display:block !important; font-weight:700; color:#36454f; font-size:16px !important; line-height:normal !important; padding:10px 0 !important; border-bottom:1px solid #eee;}
+.submenus a:hover {color:#faae3c !important;}
+.submenus a img {margin-bottom:10px; display:none !important;}
+.smdiv1, .smdiv2, .smdiv3, .smdiv4, .smdiv5, .smdiv6, .smdiv7 {display:none;}
