@@ -28,7 +28,32 @@ $(document).ready(function(){
 		showMenu(".sb4but",".smdiv4");
 		showMenu(".sb5but",".smdiv5");
 	
-	
+		$('.owl-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			responsiveClass: true,
+			autoplay:true,
+    autoplayTimeout: 4000,
+	smartSpeed: 1000,
+    autoplayHoverPause: true,
+	touchDrag: true, dots: false,
+			responsive: {
+			  0: {
+				items: 1,
+				nav: false
+			  },
+			  600: {
+				items: 2,
+				nav: false
+			  },
+			  1000: {
+				items: 4,
+				nav: false,
+				loop: true,
+				margin: 20
+			  }
+			}
+		  })
 		
 		
 });

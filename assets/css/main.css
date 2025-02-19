@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Reset some default styles */
+
+html {scroll-behavior:smooth;}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+{scrollbar-width:thin; scrollbar-color:#0a4191 #fff;}
+::-webkit-scrollbar {width:10px;}
+::-webkit-scrollbar-track {background:#fff; opacity: 0;}
+::-webkit-scrollbar-thumb {background-color:#0a4191; border:0 solid orange; border-radius:8px;}
 
 /* Body Styling */
 body {
@@ -25,3 +33,33 @@ body {
 .submenus li a:hover {color:#500B86 !important;}
 .submenus a img {margin-bottom:10px; display:none !important;}
 .smdiv1, .smdiv2, .smdiv3, .smdiv4, .smdiv5, .smdiv6, .smdiv7 {display:none;}
+
+.owl-carousel.owl-theme .item{transition:all .5s;}
+.owl-carousel.owl-theme .item:hover{transition:all .5s; background-image: linear-gradient(to right, #054f7d, #00a7cf, #efe348, #861a54, #054f7d);
+    background-size: 600%;
+    background-position: 0 0;
+    /* Animation */
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;}
+
+@keyframes gradients {
+    0% {
+      background-position: 0 0;
+    }
+    25% {
+      background-position: 50% 0;
+    }
+    50% {
+      background-position: 90% 0;
+    }
+    60% {
+      background-position: 60%;
+    }
+    75% {
+      background-position: 40%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
