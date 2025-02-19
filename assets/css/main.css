@@ -15,9 +15,13 @@ body {
     overflow-x: hidden; font-family: 'Noto Sans';
 }
 .sb1but, .sb2but, .sb3but, .sb4but, .sb5but, .sb6but {line-height: 80px;}
+.sb1but.active, .sb2but.active, .sb3but.active, .sb4but.active, .sb5but.active, .sb6but.active {color: #500B86;}
 .submenus {position: absolute; left: 0; top: 78px; width: 100%; min-height: 200px; }
 .submenus > div {width:100%; float:left; margin:0;}
-.submenus a {display:block !important; font-weight:700; color:#36454f; font-size:16px !important; line-height:normal !important; padding:10px 0 !important; border-bottom:1px solid #eee;}
-.submenus a:hover {color:#faae3c !important;}
+.submenus > div h2{text-transform: uppercase; font-size: 12px; font-weight: 500;letter-spacing: 1px;}
+.submenus li a {position:relative;display:block !important;padding-left:20px; font-weight:500; color:#FFFFFF; font-size:14px !important; line-height:normal !important; padding:5px 0 !important;padding-left: 30px !important; transition: all 0.3s ease-in-out;}
+.submenus li a::before {content: ""; display: block; position: absolute; width: 16px; height: 16px; border-radius: 50%;
+    background: linear-gradient(93deg, rgba(116,66,154,1) 38%, rgba(151,213,255,1) 100%);left: 0; top:23%;}
+.submenus li a:hover {color:#500B86 !important;}
 .submenus a img {margin-bottom:10px; display:none !important;}
 .smdiv1, .smdiv2, .smdiv3, .smdiv4, .smdiv5, .smdiv6, .smdiv7 {display:none;}
